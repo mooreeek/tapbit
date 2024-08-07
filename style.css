@@ -1,0 +1,187 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(255,104,0,1) 0%, rgba(234,151,61,1) 75%);
+    position: fixed;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+label {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#balance {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 50px;
+    color: azure;
+    transition: 0.5s;
+}
+
+#clicker {
+    position: absolute;
+    top: 20%;
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+#clicker:active {
+    transform: scale(0.9)
+}
+
+.limit_progress {
+    position: absolute;
+    bottom: 10%;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+}
+
+#limit {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+}
+
+.progressBar {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.label_limit {
+    width: 10%;
+}
+
+.labelLimit {
+    width: fit-content;
+    font-size: 24px;
+    font-weight: bolder;
+    display: block;
+    margin: auto;
+}
+
+.upgradeBox {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 50px;
+    height: 50%;
+    padding: 75px 0;
+    width: 100%;
+}
+
+.plus {
+    border: none;
+    border-radius: 25px;
+    width: 300px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+    transition: 0.3s;
+    font-size: 36px;
+}
+
+.tap {
+    background-color: #89FC00;
+}
+
+.lim {
+    background-color: #FCE622;
+}
+
+.upgrLabel {
+    display: block;
+    width: fit-content;
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+.upgrH {
+    width: fit-content;
+    font-size: 50px;
+    margin: 0 auto;
+    padding: 30px 0;
+    color: azure;
+}
+
+.navBox {
+    position: absolute;
+    bottom: 30px;
+    left: 5%;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    background-color: rgba(255, 255, 255, 0.628);
+    border-radius: 50px;
+}
+
+.navItem {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.upgrades {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.soon {
+    font-size: 50px;
+    background-color: gray;
+}
+
+
+@media (max-height: 800px) {
+    .plus {
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+    }
+    
+    .upgrLabel {
+        font-size: 20px;
+    }
+
+   
+}
+
+@media (max-height: 650px) or (max-width: 500px) {
+     #clicker {
+        width: 80%;
+        left: 10%;
+    }
+}
